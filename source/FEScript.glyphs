@@ -740,7 +740,7 @@ sub comma.full.vert by comma.full.vert.ss01;
 labels = (
 {
 language = dflt;
-value = "Alternative vertical puncutation layout form";
+value = "Alternative vertical punctuation layout form";
 },
 {
 language = ZHS;
