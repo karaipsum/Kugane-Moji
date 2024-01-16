@@ -1,9 +1,14 @@
 # Augmented Far Eastern Script
-[中文介绍](README_CN.md) *施工中
+[简介](README_CN.md) | [紹介](README_JP.md) * Japanese introduction page doesn't exist yet, your help in translation is deeply appreciated.
 
 **Fanmade** typeface, greetings from Kugane.
 ![Title](preview/Title.svg)
-> Reads 「クガネへ　よこそう」
+> Reads 「ようこそ　クガネへ」, can be found on _Shiokaze_ Hostelry.
+
+### Localized Family Name
+- 🇺🇸 Augmented Far Eastern Script
+- 🇯🇵 クガネモジＲＥ
+- 🇨🇳 改良型东方文字
 
 ## Glyphs Preview
 
@@ -12,7 +17,7 @@
 
 Currently supports:
 - Hiragana/Katakana (identical)
-- Numbers (0-9)
+- Numbers (0-9) (full-width/tabular figures)
 - Basic punctuations (personal design)
 - and more (…?)
 
@@ -27,12 +32,14 @@ Below are the currently supported Opentype features.
 ![liga](preview/liga.svg)
 There's a set of ligatures that looks like double vowels kana in the official glyph table. I'm still not sure about how it is supposed to be used but here we go.
 
-Note that not all double vowels are supposed to be combined, based on the meanings of the phrase. Therefore, please be cautious as in most popular design software, `liga` is on by default. I chose to use this feature table to differentiate from the `dlig` below.
+> Note that not all double vowels are supposed to be combined, based on the meanings of the phrase. Therefore, please be cautious as in most popular design software, `liga` is on by default. I chose to use this feature table to differentiate from the `dlig` below.
+
+Also features ligatures between `!` & `?`.
 
 ### Discretionary Ligature `dlig` (default off)
 
 ![dlig](preview/dlig.svg)
-There's a set of ligatures such as より, こと, さぶらい, ドマ, etc. in the official glyph table.
+The official glyph table includes a few kana ligatures (合略仮名): some traditional ones, such as `より→ゟ` and `コト→ヿ`, as well as some related to the lore in the game, such as さぶらい, ドマ, etc.
 
 ### Full-width `fwid` (default off)
 
@@ -48,7 +55,7 @@ These features should be automatically applied when using a modern design softwa
 
 ### Stylistic Alternates `salt` (default off)
 
-Currently only features a different personal design of full-width brackets `【】`, with vertical support.
+Currently only features a different (personal) design of full-width brackets `【】`, with vertical support.
 
 ### Stylistic Set 1 `ss01`: Alternative vertical punctuation layout form (default off)
 
@@ -56,11 +63,12 @@ A personal attempt to implement an alternative layout of vertical punctuation (�
 
 ### Stylistic Set 2 `ss02`: Center-align vertical sutegana (default off)
 
-Personally I feel that the sutegana in this specific typeface could be center-aligned in vertical typesetting, based on the style of the script. That's why this set exists.
+Personally I feel that the sutegana in this specific typeface could be center-aligned in vertical typesetting, based on its handwriting style of the scripture.
 
-## Source
+## Reference
 
 - _Far Eastern Script_ from [_Encyclopaedia Eorzea II_](https://sqex.to/giPAn)
+- Development inspired by [_Kazuraki_ by Ryoko Nishizuka 西塚涼子](https://fonts.adobe.com/fonts/kazuraki-sp2n)
 
 ## Notice
 
