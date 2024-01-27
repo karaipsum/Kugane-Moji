@@ -1,7 +1,13 @@
 # 改良型东方文字
-[Introduction](README.md) | [紹介](README_JP.md) * 暂无日文介绍，欢迎协助！
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[Introduction](README.md) | [紹介](README_JP.md)
+> 暂无日文介绍，欢迎协助！
 
 **非官方自制**字体，欢迎来到黄金港！
+
+改良型东方文字进行了再设计，增加了更多字符与 Opentype 特性。
+
 ![标题](preview/Title.svg)
 > 写作 「ようこそ　クガネへ」，可以在潮风亭的牌匾上看到。
 
@@ -30,18 +36,18 @@
 以下是当前支持的 Opentype 特性。
 
 ### 标准连字 `liga`（默认开启）
-
-![liga](preview/liga.svg)
-官方字符表中有像是双元音组合的连写假名，`あいうえお` 两两组合共 25 个。虽然不知道具体用法不过还是做出来了。
-
-> 请注意：根据词义句意，并不是所有双元音的组合都应该连写。许多常用设计软件中默认开启标准连字 `liga`，可能需要适当关闭。选用这个特性是因为我想与下面的 `dlig` 组合进行区分。
-
-同时也支持 `！` 和 `？` 的两两连字组合。
+目前支持 `！` 和 `？` 的两两连字组合，以及不中断的破折号`——`。
 
 ### 自由连字 `dlig`（默认关闭）
 
 ![dlig](preview/dlig.svg)
 官方字符表中还包含了一部分合略假名（合略仮名）。一部分是日语中本来就有的，例如 `より→ゟ` 和 `コト→ヿ`；还有一部分与游戏中的民俗文化有关，例如 さぶらい 和 ドマ。
+
+### 花饰字 `swsh`（默认关闭）
+![swsh](preview/swsh.svg)
+官方字符表中有像是双元音组合的连写假名，`あいうえお` 两两组合共 25 个。虽然不知道具体用法不过还是做出来了。
+
+> 请注意：根据词义句意，并不是所有双元音的组合都应该连写。**在1.001版本更新中**，双元音的组合字已经更换为花饰字 `swsh` 开启，以避免因标准连字 `liga` 默认开启造成的转换错误。
 
 ### 全宽 `fwid`（默认关闭）
 
@@ -74,9 +80,10 @@
 - 东方文字字符表 [_Encyclopaedia Eorzea II_](https://sqex.to/giPAn) | [《艾欧泽亚百科全书II》](https://www.taobao.com/list/item/635215701689.htm)
 - 字体的制作受到了 [かづらき by Ryoko Nishizuka 西塚涼子](https://fonts.adobe.com/fonts/kazuraki-sp2n) 的启发
 
-## 注意
+## 授权
+此处提及的所有公司、产品和系统名称均为其各自公司的商标或注册商标。
 
-本字体的设计原稿来自[最终幻想XIV by SQUARE ENIX CO., LTD.](https://www.finalfantasyxiv.com/)，请不要将此同人字体用于任何商业用途。
+改良型新式艾欧泽亚文字以 [MIT](LICENSE) License 开源。
 
 ## 尾声
 

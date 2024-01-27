@@ -1,6 +1,9 @@
 {
-.appVersion = "3134";
+.appVersion = "3151";
 .formatVersion = 3;
+DisplayStrings = (
+"34かいいつわりゆをはまみのにがらんこくらにたろ【け】いにゅうちひそはつまのけせけいさらふさとうさんびんむしゃうたすすうきぶきどす。やねんっくるまがかりがいいもねぐうつわ83ふつれをついき3せるめらとめ5たいちょうふやめじがたそうゆのてきむこうぞさしつきょうそさんつげうこてぜっふなしょうどんぶりぱとゅう。けつとちらあぬせおせきいうえびぼけんぜんわそくれとぎくんどひさめれっふおこしほうろねかとさっそじんらんみらあらくろくたしょくしゅづやとかうりいよしょ6けっせろごうぎいしめどしんたいげんはてくかれ。"
+);
 customParameters = (
 {
 name = unicodeRanges;
@@ -53,6 +56,7 @@ features = (
 {
 code = "feature liga;
 feature dlig;
+feature swsh;
 feature tnum;
 feature fwid;
 feature vert;
@@ -63,6 +67,33 @@ feature ss01;
 feature ss02;
 ";
 tag = aalt;
+},
+{
+code = "# punctuation
+sub exclam exclam by exclam_exclam;
+sub exclam question by exclam_question;
+sub question exclam by question_exclam;
+sub question question by question_question;
+sub exclam.full exclam.full by exclam_exclam.full;
+sub exclam.full question.full by exclam_question.full;
+sub question.full exclam.full by question_exclam.full;
+sub question.full question.full by question_question.full;
+sub emdash emdash by emdash_emdash;";
+tag = liga;
+},
+{
+code = "# yori
+sub yo-hira ri-hira by digraphyori-hira;
+# koto
+sub ko-hira to-hira by digraphkoto-kata;
+# nari
+sub na-hira ri-hira by digraphnari-hira.dlig;
+# doma
+sub do-hira ma-hira by do_ma-kata.dlig;
+# saburai
+sub sa-hira bu-hira ra-hira i-hira by sa_bu_ra_i-hira.dlig;
+";
+tag = dlig;
 },
 {
 code = "# a
@@ -95,25 +126,11 @@ sub o-hira i-hira by o_i-hira;
 sub o-hira u-hira by o_u-hira;
 sub o-hira e-hira by o_e-hira;
 sub o-hira o-hira by o_o-hira;
-
 # punctuation
-sub exclam exclam by exclam_exclam;
-sub exclam question by exclam_question;
-sub question exclam by question_exclam;
-sub question question by question_question;
-sub exclam.full exclam.full by exclam_exclam.full;
-sub exclam.full question.full by exclam_question.full;
-sub question.full exclam.full by question_exclam.full;
-sub question.full question.full by question_question.full;";
-tag = liga;
-},
-{
-code = "sub yo-hira ri-hira by digraphyori-hira;
-sub ko-hira to-hira by digraphkoto-kata;
-sub na-hira ri-hira by digraphnari-hira.dlig;
-sub do-hira ma-hira by do_ma-kata.dlig;
-sub sa-hira bu-hira ra-hira i-hira by sa_bu_ra_i-hira.dlig;";
-tag = dlig;
+sub emdash by emdash.swsh; # no-stop emdash
+sub emdash emdash by emdash_emdash.swsh;
+";
+tag = swsh;
 },
 {
 code = "sub zero by zero.tnum;
@@ -400,6 +417,7 @@ sub nine by nine.vert;
 sub comma-han by comma-han.vert;
 sub period-han by period-han.vert;
 sub dot-kata by dot-kata.vert;
+sub emdash_emdash by emdash_emdash.vert;
 sub exclam_exclam by exclam_exclam.vert;
 sub exclam_question by exclam_question.vert;
 sub question_exclam by question_exclam.vert;
@@ -408,12 +426,17 @@ sub exclam_exclam.full by exclam_exclam.full.vert;
 sub exclam_question.full by exclam_question.full.vert;
 sub question_exclam.full by question_exclam.full.vert;
 sub question_question.full by question_question.full.vert;
+sub emdash_emdash.swsh by emdash_emdash.swsh.vert;
 sub ellipsis by ellipsis.vert;
 sub comma.full by comma.full.vert;
 sub colon.full by colon.full.vert;
 sub exclam.full by exclam.full.vert;
 sub question.full by question.full.vert;
 sub semicolon.full by semicolon.full.vert;
+sub emdash by emdash.vert;
+sub endash by endash.vert;
+sub hyphen by hyphen.vert;
+sub emdash.swsh by emdash.swsh.vert;
 sub blacklenticularbracketleft by blacklenticularbracketleft.vert;
 sub blacklenticularbracketright by blacklenticularbracketright.vert;
 sub cornerbracketleft by cornerbracketleft.vert;
@@ -432,6 +455,7 @@ sub parenleft.full by parenleft.full.vert;
 sub parenright.full by parenright.full.vert;
 sub blacklenticularbracketleft.salt by blacklenticularbracketleft.salt.vert;
 sub blacklenticularbracketright.salt by blacklenticularbracketright.salt.vert;
+sub asciitilde.full by asciitilde.full.vert;
 sub prolonged-kana by prolonged-kana.vert;
 ";
 tag = vert;
@@ -688,6 +712,7 @@ sub nine by nine.vert;
 sub comma-han by comma-han.vert;
 sub period-han by period-han.vert;
 sub dot-kata by dot-kata.vert;
+sub emdash_emdash by emdash_emdash.vert;
 sub exclam_exclam by exclam_exclam.vert;
 sub exclam_question by exclam_question.vert;
 sub question_exclam by question_exclam.vert;
@@ -696,12 +721,17 @@ sub exclam_exclam.full by exclam_exclam.full.vert;
 sub exclam_question.full by exclam_question.full.vert;
 sub question_exclam.full by question_exclam.full.vert;
 sub question_question.full by question_question.full.vert;
+sub emdash_emdash.swsh by emdash_emdash.swsh.vert;
 sub ellipsis by ellipsis.vert;
 sub comma.full by comma.full.vert;
 sub colon.full by colon.full.vert;
 sub exclam.full by exclam.full.vert;
 sub question.full by question.full.vert;
 sub semicolon.full by semicolon.full.vert;
+sub emdash by emdash.vert;
+sub endash by endash.vert;
+sub hyphen by hyphen.vert;
+sub emdash.swsh by emdash.swsh.vert;
 sub blacklenticularbracketleft by blacklenticularbracketleft.vert;
 sub blacklenticularbracketright by blacklenticularbracketright.vert;
 sub cornerbracketleft by cornerbracketleft.vert;
@@ -720,6 +750,7 @@ sub parenleft.full by parenleft.full.vert;
 sub parenright.full by parenright.full.vert;
 sub blacklenticularbracketleft.salt by blacklenticularbracketleft.salt.vert;
 sub blacklenticularbracketright.salt by blacklenticularbracketright.salt.vert;
+sub asciitilde.full by asciitilde.full.vert;
 sub prolonged-kana by prolonged-kana.vert;
 ";
 tag = vrt2;
@@ -736,6 +767,8 @@ automatic = 1;
 code = "sub comma-han.vert by comma-han.vert.ss01;
 sub period-han.vert by period-han.vert.ss01;
 sub comma.full.vert by comma.full.vert.ss01;
+sub exclam.full.vert by exclam.full.vert.ss01;
+sub question.full.vert by question.full.vert.ss01;
 ";
 labels = (
 {
@@ -19682,13 +19715,13 @@ unicode = 65041;
 {
 color = 8;
 glyphname = "comma-han.vert.ss01";
-lastChange = "2024-01-15 01:29:31 +0000";
+lastChange = "2024-01-27 04:20:40 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (758,802);
+pos = (694,845);
 ref = "comma-han";
 }
 );
@@ -19778,13 +19811,13 @@ unicode = 65042;
 {
 color = 8;
 glyphname = "period-han.vert.ss01";
-lastChange = "2024-01-15 01:35:16 +0000";
+lastChange = "2024-01-27 04:21:04 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (735,788);
+pos = (699,871);
 ref = "period-han";
 }
 );
@@ -19796,13 +19829,13 @@ width = 800;
 {
 color = 8;
 glyphname = comma.full.vert.ss01;
-lastChange = "2024-01-15 01:39:41 +0000";
+lastChange = "2024-01-27 04:21:17 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (804,823);
+pos = (740,873);
 ref = comma.full;
 }
 );
@@ -19834,7 +19867,7 @@ unicode = (12539,8226);
 },
 {
 glyphname = "dot-kata.full";
-lastChange = "2024-01-14 23:37:58 +0000";
+lastChange = "2024-01-27 03:23:49 +0000";
 layers = (
 {
 layerId = m01;
@@ -19842,25 +19875,25 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(333,457,o),
-(303,387,o),
-(343,360,cs),
-(369,342,o),
-(358,334,o),
-(358,321,c),
-(374,312,l),
-(395,312,o),
-(423,330,o),
-(436,330,cs),
-(449,330,o),
+(343,457,o),
+(313,397,o),
+(353,370,cs),
+(379,352,o),
+(358,344,o),
+(358,331,c),
+(374,322,l),
+(395,322,o),
+(423,340,o),
+(436,340,cs),
+(449,340,o),
 (472,345,o),
 (472,375,cs),
 (472,411,o),
-(451,447,o),
-(431,452,cs),
-(393,461,o),
-(361,435,o),
-(340,452,cs)
+(451,427,o),
+(431,432,cs),
+(393,441,o),
+(371,435,o),
+(350,452,cs)
 );
 }
 );
@@ -19890,6 +19923,27 @@ width = 800;
 );
 tags = (
 unofficial
+);
+},
+{
+glyphname = emdash_emdash;
+lastChange = "2024-01-27 03:33:21 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(105,325,l),
+(1305,325,l),
+(1305,382,l),
+(105,382,l)
+);
+}
+);
+width = 1410;
+}
 );
 },
 {
@@ -20047,7 +20101,7 @@ liga
 {
 color = 9;
 glyphname = question_question;
-lastChange = "2024-01-15 01:10:28 +0000";
+lastChange = "2024-01-27 03:39:17 +0000";
 layers = (
 {
 layerId = m01;
@@ -20135,6 +20189,45 @@ pos = (50,0);
 ref = question_question;
 }
 );
+width = 800;
+}
+);
+},
+{
+glyphname = emdash_emdash.swsh;
+lastChange = "2024-01-27 03:34:20 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(0,325,l),
+(1200,325,l),
+(1200,382,l),
+(0,382,l)
+);
+}
+);
+width = 1200;
+}
+);
+},
+{
+glyphname = emdash_emdash.vert;
+lastChange = "2024-01-27 03:56:01 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+angle = -90;
+pos = (46,855);
+ref = emdash_emdash;
+}
+);
+vertWidth = 1300;
 width = 800;
 }
 );
@@ -20286,6 +20379,24 @@ width = 800;
 );
 },
 {
+glyphname = emdash_emdash.swsh.vert;
+lastChange = "2024-01-27 03:56:56 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+angle = -90;
+pos = (46,800);
+ref = emdash_emdash.swsh;
+}
+);
+vertWidth = 1200;
+width = 800;
+}
+);
+},
+{
 glyphname = ellipsis;
 lastChange = "2024-01-15 01:00:31 +0000";
 layers = (
@@ -20376,7 +20487,7 @@ unicode = 65306;
 },
 {
 glyphname = comma.full;
-lastChange = "2024-01-14 23:40:59 +0000";
+lastChange = "2024-01-27 03:23:04 +0000";
 layers = (
 {
 layerId = m01;
@@ -20384,25 +20495,25 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(110,164,o),
-(81,96,o),
-(130,62,cs),
-(150,48,o),
-(139,18,o),
-(122,0,c),
-(137,-14,l),
-(158,-4,o),
-(186,26,o),
-(199,26,cs),
-(212,26,o),
-(245,32,o),
-(245,54,cs),
-(245,65,o),
-(251,131,o),
-(210,140,cs),
-(171,149,o),
-(131,140,o),
-(115,158,cs)
+(133,188,o),
+(100,136,o),
+(149,102,cs),
+(169,88,o),
+(120,25,o),
+(66,-6,c),
+(81,-20,l),
+(167,21,o),
+(184,66,o),
+(212,66,cs),
+(225,66,o),
+(245,72,o),
+(245,94,cs),
+(245,105,o),
+(248,147,o),
+(207,156,cs),
+(168,165,o),
+(154,164,o),
+(138,182,cs)
 );
 }
 );
@@ -20748,6 +20859,203 @@ width = 800;
 );
 },
 {
+color = 8;
+glyphname = exclam.full.vert.ss01;
+lastChange = "2024-01-27 04:23:30 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+pos = (584,724);
+ref = exclam.full.vert;
+}
+);
+vertWidth = 0;
+width = 800;
+}
+);
+},
+{
+color = 8;
+glyphname = question.full.vert.ss01;
+lastChange = "2024-01-27 04:24:22 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+pos = (585,727);
+ref = question.full.vert;
+}
+);
+vertWidth = 0;
+width = 800;
+}
+);
+},
+{
+glyphname = hyphen;
+lastChange = "2024-01-27 03:31:34 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(100,325,l),
+(300,325,l),
+(300,382,l),
+(100,382,l)
+);
+}
+);
+width = 400;
+}
+);
+unicode = 45;
+},
+{
+glyphname = endash;
+lastChange = "2024-01-27 03:32:26 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(130,325,l),
+(470,325,l),
+(470,382,l),
+(130,382,l)
+);
+}
+);
+width = 600;
+}
+);
+unicode = 8211;
+},
+{
+glyphname = emdash;
+lastChange = "2024-01-27 03:29:34 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(105,325,l),
+(695,325,l),
+(695,382,l),
+(105,382,l)
+);
+}
+);
+width = 800;
+}
+);
+unicode = 8212;
+},
+{
+glyphname = emdash.vert;
+lastChange = "2024-01-27 03:57:45 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+angle = -90;
+pos = (46,855);
+ref = emdash;
+}
+);
+vertWidth = 690;
+width = 800;
+}
+);
+unicode = 65073;
+},
+{
+glyphname = endash.vert;
+lastChange = "2024-01-27 03:57:58 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+angle = -90;
+pos = (46,880);
+ref = endash;
+}
+);
+vertWidth = 440;
+width = 800;
+}
+);
+unicode = 65074;
+},
+{
+glyphname = emdash.swsh;
+lastChange = "2024-01-27 03:35:50 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(0,325,l),
+(800,325,l),
+(800,382,l),
+(0,382,l)
+);
+}
+);
+width = 800;
+}
+);
+},
+{
+glyphname = hyphen.vert;
+lastChange = "2024-01-27 03:58:10 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+angle = -90;
+pos = (46,850);
+ref = hyphen;
+}
+);
+vertWidth = 300;
+width = 800;
+}
+);
+},
+{
+glyphname = emdash.swsh.vert;
+lastChange = "2024-01-27 03:58:24 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+angle = -90;
+pos = (46,800);
+ref = emdash.swsh;
+}
+);
+vertWidth = 800;
+width = 800;
+}
+);
+},
+{
 glyphname = angleLeft;
 lastChange = "2024-01-15 00:16:55 +0000";
 layers = (
@@ -21055,17 +21363,18 @@ unicode = 12303;
 {
 color = 3;
 glyphname = blacklenticularbracketleft.vert;
-lastChange = "2024-01-15 00:57:36 +0000";
+lastChange = "2024-01-27 04:30:36 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 angle = -90;
-pos = (22,598);
+pos = (22,747);
 ref = blacklenticularbracketleft;
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21074,17 +21383,18 @@ unicode = 65083;
 {
 color = 3;
 glyphname = blacklenticularbracketright.vert;
-lastChange = "2024-01-15 00:57:45 +0000";
+lastChange = "2024-01-27 04:31:03 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (0,699);
+pos = (0,800);
 ref = blacklenticularbracketleft.vert;
 scale = (1,-1);
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21144,17 +21454,18 @@ unicode = 65341;
 {
 color = 3;
 glyphname = cornerbracketleft.vert;
-lastChange = "2024-01-15 00:58:16 +0000";
+lastChange = "2024-01-27 04:34:47 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 angle = -90;
-pos = (60,569);
+pos = (60,769);
 ref = cornerbracketleft;
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21163,17 +21474,18 @@ unicode = 65089;
 {
 color = 3;
 glyphname = cornerbracketright.vert;
-lastChange = "2024-01-15 00:58:54 +0000";
+lastChange = "2024-01-27 04:34:58 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 angle = 180;
-pos = (800,618);
+pos = (800,800);
 ref = cornerbracketleft.vert;
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21182,20 +21494,21 @@ unicode = 65090;
 {
 color = 3;
 glyphname = dblanglebracketleft.vert;
-lastChange = "2024-01-15 00:59:37 +0000";
+lastChange = "2024-01-27 04:31:30 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (0,-104);
+pos = (0,137);
 ref = angleLeft.vert;
 },
 {
-pos = (0,4);
+pos = (0,245);
 ref = angleLeft.vert;
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21204,17 +21517,18 @@ unicode = 65085;
 {
 color = 3;
 glyphname = dblanglebracketright.vert;
-lastChange = "2024-01-15 00:59:44 +0000";
+lastChange = "2024-01-27 04:31:35 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (0,597);
+pos = (0,800);
 ref = dblanglebracketleft.vert;
 scale = (1,-1);
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21328,17 +21642,18 @@ unofficial
 {
 color = 3;
 glyphname = tortoiseshellbracketleft.vert;
-lastChange = "2024-01-15 00:58:37 +0000";
+lastChange = "2024-01-27 04:32:20 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 angle = -90;
-pos = (22,575);
+pos = (22,802);
 ref = tortoiseshellbracketleft;
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21347,17 +21662,18 @@ unicode = 65081;
 {
 color = 3;
 glyphname = tortoiseshellbracketright.vert;
-lastChange = "2024-01-15 00:58:42 +0000";
+lastChange = "2024-01-27 04:32:28 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (0,615);
+pos = (0,800);
 ref = tortoiseshellbracketleft.vert;
 scale = (1,-1);
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21366,7 +21682,7 @@ unicode = 65082;
 {
 color = 3;
 glyphname = angleLeft.vert;
-lastChange = "2024-01-15 00:57:07 +0000";
+lastChange = "2024-01-27 04:32:53 +0000";
 layers = (
 {
 layerId = m01;
@@ -21374,15 +21690,16 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(800,-21,l),
-(400,126,l),
-(0,-21,l),
-(0,-87,l),
-(400,71,l),
-(800,-87,l)
+(800,116,l),
+(400,263,l),
+(0,116,l),
+(0,50,l),
+(400,208,l),
+(800,50,l)
 );
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21390,17 +21707,18 @@ width = 800;
 {
 color = 3;
 glyphname = angleRight.vert;
-lastChange = "2024-01-15 00:57:18 +0000";
+lastChange = "2024-01-27 04:32:59 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (0,701);
+pos = (0,800);
 ref = angleLeft.vert;
 scale = (1,-1);
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21408,17 +21726,18 @@ width = 800;
 {
 color = 3;
 glyphname = whitecornerbracketleft.vert;
-lastChange = "2024-01-15 00:59:15 +0000";
+lastChange = "2024-01-27 04:35:17 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 angle = -90;
-pos = (45,571);
+pos = (45,774);
 ref = whitecornerbracketleft;
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21427,17 +21746,18 @@ unicode = 65091;
 {
 color = 3;
 glyphname = whitecornerbracketright.vert;
-lastChange = "2024-01-15 00:59:24 +0000";
+lastChange = "2024-01-27 04:35:27 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 angle = 180;
-pos = (800,605);
+pos = (800,800);
 ref = whitecornerbracketleft.vert;
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21446,17 +21766,18 @@ unicode = 65092;
 {
 color = 3;
 glyphname = bracketleft.full.vert;
-lastChange = "2024-01-15 00:49:08 +0000";
+lastChange = "2024-01-27 04:33:14 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 angle = -90;
-pos = (22,775);
+pos = (22,802);
 ref = bracketleft.full;
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21465,17 +21786,18 @@ unicode = 65095;
 {
 color = 3;
 glyphname = bracketright.full.vert;
-lastChange = "2024-01-15 00:49:23 +0000";
+lastChange = "2024-01-27 04:33:20 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (0,812);
+pos = (0,800);
 ref = bracketleft.full.vert;
 scale = (1,-1);
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21484,17 +21806,18 @@ unicode = 65096;
 {
 color = 3;
 glyphname = parenleft.full.vert;
-lastChange = "2024-01-15 00:50:12 +0000";
+lastChange = "2024-01-27 04:33:35 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 angle = -90;
-pos = (22,714);
+pos = (22,746);
 ref = parenleft.full;
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21503,17 +21826,18 @@ unicode = 65077;
 {
 color = 3;
 glyphname = parenright.full.vert;
-lastChange = "2024-01-15 00:50:26 +0000";
+lastChange = "2024-01-27 04:33:43 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (0,811);
+pos = (0,800);
 ref = parenleft.full.vert;
 scale = (1,-1);
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21522,17 +21846,18 @@ unicode = 65078;
 {
 color = 3;
 glyphname = blacklenticularbracketleft.salt.vert;
-lastChange = "2024-01-15 00:58:00 +0000";
+lastChange = "2024-01-27 04:31:56 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 angle = -90;
-pos = (22,577);
+pos = (22,747);
 ref = blacklenticularbracketleft.salt;
 }
 );
+vertWidth = 800;
 width = 800;
 }
 );
@@ -21540,15 +21865,71 @@ width = 800;
 {
 color = 3;
 glyphname = blacklenticularbracketright.salt.vert;
-lastChange = "2024-01-15 00:58:07 +0000";
+lastChange = "2024-01-27 04:32:06 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (0,672);
+pos = (0,800);
 ref = blacklenticularbracketleft.salt.vert;
 scale = (1,-1);
+}
+);
+vertWidth = 800;
+width = 800;
+}
+);
+},
+{
+glyphname = asciitilde.full;
+lastChange = "2024-01-27 03:49:07 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(131,404,o),
+(181,460,o),
+(253,460,cs),
+(360,460,o),
+(494,323,o),
+(563,323,cs),
+(628,323,o),
+(690,396,o),
+(708,443,c),
+(736,416,l),
+(669,329,o),
+(619,271,o),
+(547,271,cs),
+(440,271,o),
+(310,410,o),
+(241,410,cs),
+(176,410,o),
+(110,337,o),
+(92,290,c),
+(64,317,l)
+);
+}
+);
+width = 800;
+}
+);
+unicode = 65374;
+},
+{
+glyphname = asciitilde.full.vert;
+lastChange = "2024-01-27 03:50:40 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+angle = -90;
+pos = (21,738);
+ref = asciitilde.full;
 }
 );
 width = 800;
@@ -22112,6 +22493,10 @@ value = "クガネモジＲＥ";
 {
 language = ENG;
 value = "Augmented Far Eastern Script";
+},
+{
+language = dflt;
+value = "Augmented Far Eastern Script";
 }
 );
 },
@@ -22120,11 +22505,11 @@ key = designers;
 values = (
 {
 language = dflt;
-value = "SQUARE ENIX CO., LTD. / catloaf";
+value = catloaf;
 },
 {
 language = ZHS;
-value = "SQUARE ENIX CO., LTD. / 猫面包";
+value = "猫面包";
 }
 );
 },
@@ -22150,19 +22535,15 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "SQUARE ENIX CO., LTD. All Rights Reserved./ Retraced and edited by catloaf. For non-commercial purposes only.";
+value = "catloaf / Original design of glyphs by SQUARE ENIX CO., LTD.";
 },
 {
 language = ENG;
-value = "SQUARE ENIX CO., LTD. All Rights Reserved./ Retraced and edited by catloaf. For non-commercial purposes only.";
+value = "catloaf / Original design of glyphs by SQUARE ENIX CO., LTD.";
 },
 {
 language = ZHS;
-value = "SQUARE ENIX CO., LTD. All Rights Reserved./ 由猫面包重绘并编辑制作。仅限非商业用途。";
-},
-{
-language = JPN;
-value = "SQUARE ENIX CO., LTD. All Rights Reserved./ Catloaf によるリトレースと編集。非営利目的のみ。";
+value = "猫面包 / 源字形设计来自 SQUARE ENIX CO., LTD.";
 }
 );
 },
@@ -22171,15 +22552,19 @@ key = descriptions;
 values = (
 {
 language = dflt;
-value = "Retrace of Far Eastern Script based on Encyclopaedia Eorzea II - The World of FINAL FANTASY XIV with added Opentype support.";
+value = "A re-work of Far Eastern Script with additional glyphs and Opentype features. The original glyphs were from Far Eastern Script in Encyclopaedia Eorzea II - The World of FINAL FANTASY XIV.
+All company, product, and system names mentioned herein are trademarks or registered trademarks of their respective companies.";
 },
 {
 language = ENG;
-value = "Retrace of Far Eastern Script based on Encyclopaedia Eorzea II - The World of FINAL FANTASY XIV with added Opentype support.";
+value = "A re-work of Far Eastern Script with additional glyphs and Opentype features. The original glyphs were from Far Eastern Script in Encyclopaedia Eorzea II - The World of FINAL FANTASY XIV.
+All company, product, and system names mentioned herein are trademarks or registered trademarks of their respective companies.";
 },
 {
 language = ZHS;
-value = "基于《艾欧泽亚百科全书II》手工重绘的东方文字，并增加了 Opentype 特性支持。";
+value = "改良型东方文字进行了再设计，增加了更多字符与 Opentype 特性。
+源字形来自《艾欧泽亚百科全书II》的东方文字图表。
+此处提及的所有公司、产品和系统名称均为其各自公司的商标或注册商标。";
 }
 );
 },
@@ -22193,8 +22578,33 @@ value = "ひかりのせんしたちよ。ぐれんのかいほうしゃとな�
 );
 },
 {
-key = designerURL;
-value = "https://www.finalfantasyxiv.com";
+key = licenses;
+values = (
+{
+language = dflt;
+value = "MIT License
+
+Copyright (c) 2023-2024 Catloaf
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \"Software\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.";
+}
+);
 }
 );
 settings = {
@@ -22202,5 +22612,5 @@ disablesNiceNames = 1;
 };
 unitsPerEm = 1000;
 versionMajor = 1;
-versionMinor = 0;
+versionMinor = 1;
 }

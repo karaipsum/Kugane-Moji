@@ -1,7 +1,13 @@
 # Augmented Far Eastern Script
-[简介](README_CN.md) | [紹介](README_JP.md) * Japanese introduction page doesn't exist yet, your help in translation is deeply appreciated.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[简介](README_CN.md) | [紹介](README_JP.md) 
+> Japanese introduction page doesn't exist yet, your help in translation is deeply appreciated.
 
 **Fanmade** typeface, greetings from Kugane.
+
+A re-work of Far Eastern Script with additional glyphs and Opentype features.
+
 ![Title](preview/Title.svg)
 > Reads 「ようこそ　クガネへ」, can be found on _Shiokaze_ Hostelry.
 
@@ -29,17 +35,19 @@ Below are the currently supported Opentype features.
 
 ### Standard Ligature `liga` (default on)
 
-![liga](preview/liga.svg)
-There's a set of ligatures that looks like double vowels kana in the official glyph table. I'm still not sure about how it is supposed to be used but here we go.
-
-> Note that not all double vowels are supposed to be combined, based on the meanings of the phrase. Therefore, please be cautious as in most popular design software, `liga` is on by default. I chose to use this feature table to differentiate from the `dlig` below.
-
-Also features ligatures between `!` & `?`.
+Currently features ligatures between `!` & `?`, and double emdashes `——`.
 
 ### Discretionary Ligature `dlig` (default off)
 
 ![dlig](preview/dlig.svg)
 The official glyph table includes a few kana ligatures (合略仮名): some traditional ones, such as `より→ゟ` and `コト→ヿ`, as well as some related to the lore in the game, such as さぶらい, ドマ, etc.
+
+### Swash `swsh` (default off)
+
+![swsh](preview/swsh.svg)
+There's a set of ligatures that looks like double vowels kana in the official glyph table. I'm still not sure about how it is supposed to be used but here we go.
+
+> Note that not all double vowels are supposed to be combined, based on the meanings of the phrase. **In 1.001 update**, the double vowels ligatures are listed as `swsh` to avoid automatic substitution triggered by `liga`.
 
 ### Full-width `fwid` (default off)
 
@@ -70,9 +78,10 @@ Personally I feel that the sutegana in this specific typeface could be center-al
 - _Far Eastern Script_ from [_Encyclopaedia Eorzea II_](https://sqex.to/giPAn)
 - Development inspired by [_Kazuraki_ by Ryoko Nishizuka 西塚涼子](https://fonts.adobe.com/fonts/kazuraki-sp2n)
 
-## Notice
+## License
+All company, product, and system names mentioned herein are trademarks or registered trademarks of their respective companies.
 
-Original design from [FINAL FANTASY XIV by SQUARE ENIX CO., LTD.](https://www.finalfantasyxiv.com/) Please do not use this fanmade font for any type of commercial use.
+Augmented Neo-Eorzean is licensed under the [MIT](LICENSE) License.
 
 ## Footnote
 
