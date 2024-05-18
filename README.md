@@ -79,9 +79,10 @@ Personally I feel that the sutegana in this specific typeface could be center-al
 - Development inspired by [_Kazuraki_ by Ryoko Nishizuka 西塚涼子](https://fonts.adobe.com/fonts/kazuraki-sp2n)
 
 ## License
+
 All company, product, and system names mentioned herein are trademarks or registered trademarks of their respective companies.
 
-Augmented Neo-Eorzean is licensed under the [MIT](LICENSE) License.
+Augmented Far Eastern Script is licensed under the [MIT](LICENSE) License.
 
 ## Footnote
 

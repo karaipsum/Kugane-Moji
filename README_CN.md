@@ -81,9 +81,10 @@
 - 字体的制作受到了 [かづらき by Ryoko Nishizuka 西塚涼子](https://fonts.adobe.com/fonts/kazuraki-sp2n) 的启发
 
 ## 授权
+
 此处提及的所有公司、产品和系统名称均为其各自公司的商标或注册商标。
 
-改良型新式艾欧泽亚文字以 [MIT](LICENSE) License 开源。
+改良型东方文字以 [MIT](LICENSE) License 开源。
 
 ## 尾声
 
