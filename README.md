@@ -16,6 +16,12 @@ A re-work of Far Eastern Script with additional glyphs and Opentype features.
 - 🇯🇵 クガネモジＲＥ
 - 🇨🇳 改良型东方文字
 
+## Windows Compatibility
+
+See [Issue here](https://github.com/karaipsum/Postulated-Proto-Alphabet/issues/1#issue-2312178558)
+
+TL;DR: If you couldn't open or install the font, please use the files with a prefix of [W].
+
 ## Glyphs Preview
 
 ![Glyphs](preview/Glyphs.svg)
