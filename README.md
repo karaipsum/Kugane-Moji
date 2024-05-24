@@ -81,7 +81,7 @@ Personally I feel that the sutegana in this specific typeface could be center-al
 
 ## Reference
 
-- _Far Eastern Script_ from [_Encyclopaedia Eorzea II_](https://sqex.to/giPAn)
+- _Far Eastern Script_ from [_Encyclopaedia Eorzea II - The World of FINAL FANTASY XIV -_](https://sqex.to/giPAn) p.40
 - Development inspired by [_Kazuraki_ by Ryoko Nishizuka 西塚涼子](https://fonts.adobe.com/fonts/kazuraki-sp2n)
 
 ## License
@@ -89,6 +89,13 @@ Personally I feel that the sutegana in this specific typeface could be center-al
 All company, product, and system names mentioned herein are trademarks or registered trademarks of their respective companies.
 
 Augmented Far Eastern Script is licensed under the [MIT](LICENSE) License.
+
+## Project
+
+- [Augmented Neo-Eorzean](https://github.com/karaipsum/Eorzean-Typeface)
+- [Augmented Far Eastern Script](https://github.com/karaipsum/Kugane-Moji)
+- [Augmented Postulated Proto-Alphabet](https://github.com/karaipsum/Postulated-Proto-Alphabet)
+- [Augmented Norvrandt](https://github.com/karaipsum/Norvrandt-Typeface)
 
 ## Footnote
 

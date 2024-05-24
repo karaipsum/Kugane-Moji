@@ -83,7 +83,7 @@
 
 ## 参考与来源
 
-- 东方文字字符表 [_Encyclopaedia Eorzea II_](https://sqex.to/giPAn) | [《艾欧泽亚百科全书II》](https://www.taobao.com/list/item/635215701689.htm)
+- 东方文字字符表 [_Encyclopaedia Eorzea II - The World of FINAL FANTASY XIV -_](https://sqex.to/giPAn) p.40 | [《艾欧泽亚百科全书II》](https://www.taobao.com/list/item/635215701689.htm) p.40
 - 字体的制作受到了 [かづらき by Ryoko Nishizuka 西塚涼子](https://fonts.adobe.com/fonts/kazuraki-sp2n) 的启发
 
 ## 授权
@@ -91,6 +91,13 @@
 此处提及的所有公司、产品和系统名称均为其各自公司的商标或注册商标。
 
 改良型东方文字以 [MIT](LICENSE) License 开源。
+
+## 工程
+
+- [改良型新式艾欧泽亚文字](https://github.com/karaipsum/Eorzean-Typeface)
+- [改良型东方文字](https://github.com/karaipsum/Kugane-Moji)
+- [改良型古代文字](https://github.com/karaipsum/Postulated-Proto-Alphabet)
+- [改良型诺弗兰特文字](https://github.com/karaipsum/Norvrandt-Typeface)
 
 ## 尾声
 
