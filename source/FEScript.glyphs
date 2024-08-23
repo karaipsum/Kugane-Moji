@@ -1,9 +1,6 @@
 {
-.appVersion = "3151";
+.appVersion = "3260";
 .formatVersion = 3;
-DisplayStrings = (
-"34かいいつわりゆをはまみのにがらんこくらにたろ【け】いにゅうちひそはつまのけせけいさらふさとうさんびんむしゃうたすすうきぶきどす。やねんっくるまがかりがいいもねぐうつわ83ふつれをついき3せるめらとめ5たいちょうふやめじがたそうゆのてきむこうぞさしつきょうそさんつげうこてぜっふなしょうどんぶりぱとゅう。けつとちらあぬせおせきいうえびぼけんぜんわそくれとぎくんどひさめれっふおこしほうろねかとさっそじんらんみらあらくろくたしょくしゅづやとかうりいよしょ6けっせろごうぎいしめどしんたいげんはてくかれ。"
-);
 customParameters = (
 {
 name = unicodeRanges;
@@ -3099,8 +3096,7 @@ scale = (1.44,1.44);
 };
 hints = (
 {
-place = (464, 34);
-place = (464, 34);
+place = (464,34);
 type = Stem;
 }
 );
@@ -3204,7 +3200,7 @@ type = Stem;
 },
 {
 origin = (0,15);
-place = (498, 48);
+place = (498,48);
 type = Stem;
 }
 );
@@ -3286,8 +3282,7 @@ scale = (1.44,1.44);
 };
 hints = (
 {
-place = (464, 38);
-place = (464, 38);
+place = (464,38);
 type = Stem;
 }
 );
@@ -3390,8 +3385,7 @@ scale = (1.44,1.44);
 };
 hints = (
 {
-place = (199, 209);
-place = (199, 209);
+place = (199,209);
 target = (1,18);
 type = Stem;
 }
@@ -3671,8 +3665,7 @@ scale = (1.44,1.44);
 };
 hints = (
 {
-place = (457, -38);
-place = (457, -38);
+place = (457,-38);
 target = (0,27);
 type = Stem;
 }
@@ -3993,7 +3986,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (372, 36);
+place = (372,36);
 type = Stem;
 }
 );
@@ -8775,7 +8768,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (3,4);
-place = (461, 36);
+place = (461,36);
 type = Stem;
 }
 );
@@ -13656,7 +13649,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (386, 34);
+place = (386,34);
 type = Stem;
 }
 );
@@ -13777,7 +13770,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (386, 34);
+place = (386,34);
 type = Stem;
 }
 );
@@ -13906,7 +13899,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (386, 34);
+place = (386,34);
 type = Stem;
 }
 );
@@ -14041,7 +14034,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (386, 34);
+place = (386,34);
 type = Stem;
 }
 );
@@ -14182,7 +14175,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (386, 34);
+place = (386,34);
 type = Stem;
 }
 );
@@ -14329,7 +14322,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (384, 36);
+place = (384,36);
 type = Stem;
 }
 );
@@ -14451,7 +14444,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (384, 36);
+place = (384,36);
 type = Stem;
 }
 );
@@ -14577,7 +14570,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (384, 36);
+place = (384,36);
 type = Stem;
 }
 );
@@ -14711,7 +14704,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (384, 36);
+place = (384,36);
 type = Stem;
 }
 );
@@ -14827,7 +14820,7 @@ scale = (1.44,1.44);
 hints = (
 {
 origin = (0,3);
-place = (384, 36);
+place = (384,36);
 type = Stem;
 }
 );
@@ -22480,57 +22473,6 @@ liga
 ";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = ZHS;
-value = "改良型东方文字";
-},
-{
-language = JPN;
-value = "クガネモジＲＥ";
-},
-{
-language = ENG;
-value = "Augmented Far Eastern Script";
-},
-{
-language = dflt;
-value = "Augmented Far Eastern Script";
-}
-);
-},
-{
-key = designers;
-values = (
-{
-language = dflt;
-value = catloaf;
-},
-{
-language = ZHS;
-value = "猫面包";
-}
-);
-},
-{
-key = manufacturers;
-values = (
-{
-language = dflt;
-value = catloaf;
-},
-{
-language = ZHS;
-value = "猫面包";
-}
-);
-},
-{
-key = manufacturerURL;
-value = "https://linktr.ee/catloaf97";
-},
-{
 key = copyrights;
 values = (
 {
@@ -22569,11 +22511,36 @@ value = "改良型东方文字进行了再设计，增加了更多字符与 Open
 );
 },
 {
-key = sampleTexts;
+key = designers;
 values = (
 {
 language = dflt;
-value = "ひかりのせんしたちよ。ぐれんのかいほうしゃとなれ！";
+value = catloaf;
+},
+{
+language = ZHS;
+value = "猫面包";
+}
+);
+},
+{
+key = familyNames;
+values = (
+{
+language = ZHS;
+value = "改良型东方文字";
+},
+{
+language = JPN;
+value = "クガネモジＲＥ";
+},
+{
+language = ENG;
+value = "Augmented Far Eastern Script";
+},
+{
+language = dflt;
+value = "Augmented Far Eastern Script";
 }
 );
 },
@@ -22605,6 +22572,40 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.";
 }
 );
+},
+{
+key = manufacturers;
+values = (
+{
+language = dflt;
+value = catloaf;
+},
+{
+language = ZHS;
+value = "猫面包";
+}
+);
+},
+{
+key = manufacturerURL;
+value = "https://linktr.ee/catloaf97";
+},
+{
+key = postscriptFontName;
+value = "AFarEasternScript-Rg";
+},
+{
+key = sampleTexts;
+values = (
+{
+language = dflt;
+value = "ひかりのせんしたちよ。ぐれんのかいほうしゃとなれ！";
+}
+);
+},
+{
+key = vendorID;
+value = CTLF;
 }
 );
 settings = {
@@ -22612,5 +22613,5 @@ disablesNiceNames = 1;
 };
 unitsPerEm = 1000;
 versionMajor = 1;
-versionMinor = 1;
+versionMinor = 2;
 }
